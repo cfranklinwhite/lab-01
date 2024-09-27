@@ -228,7 +228,7 @@ visitors %>%
 
 _Observe in question 6 that the mean statistics across all settings are much larger than the corresponding median statistics. Discuss in your group what this suggests about the data._
 
-**Write your answer here**
+It means that the data is not normally distributed and that there are some outliers with very large numbers of visitors pushing the mean up.
 
 
 
@@ -261,8 +261,11 @@ _How many tourist attractions are there in each of the 4 nations? From this, dis
 
 
 ```{r Ex_l}
-#________ %>%
-#  ______(_______)
+
+visitors_with_nations %>%
+  group_by(nation) %>%
+  count()
+  
 ```
 
 
